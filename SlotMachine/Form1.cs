@@ -19,7 +19,7 @@ namespace SlotMachine
         }
 
         public static long credits = 100;
-        public static long total = 0;
+        public static long profit = 0;
         public static int bets = 5;
 
         public static int p1;
@@ -30,9 +30,9 @@ namespace SlotMachine
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            slot1.Image = Image.FromFile("1.png");
-            slot2.Image = Image.FromFile("2.png");
-            slot3.Image = Image.FromFile("3.png");
+            slot1.Image = Image.FromFile("Source/1.png");
+            slot2.Image = Image.FromFile("Source/2.png");
+            slot3.Image = Image.FromFile("Source/3.png");
         }
 
         public static class IntUtil
@@ -41,61 +41,90 @@ namespace SlotMachine
 
             private static void Init()
             {
-                if (random == null) random = new Random();
+                if (random == null)
+                {
+                    random = new Random();
+                }
             }
 
-            public static int Random(int min, int max)
+            public static double Random()
             {
                 Init();
-                return random.Next(min, max);
+                return random.NextDouble();
+            }
+
+            public static int Random(int max)
+            {
+                Init();
+                return random.Next(max);
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (credits >= bets)
+            if (credits < bets) return;
+
+            credits = credits - bets;
+            textBox1.Text = credits.ToString();
+            
+
+            SetImagesAccordingToValue();
+
+            profit = 0;
+
+            CalculateProfit();
+
+            credits = credits + profit;
+            textBox3.Text = profit.ToString();
+            textBox1.Text = credits.ToString();
+        }
+
+        private static void CalculateProfit()
+        {
+            if (p1 == 3) profit = profit + 5;
+            if (p1 == 2 & p2 == 2) profit = profit + 10;
+            if (p1 == 3 & p2 == 3) profit = profit + 10;
+            if (p1 == 3 & p2 == 3 & p3 == 3) profit = profit + 20;
+            if (p1 == 2 & p2 == 2 & p3 == 2) profit = profit + 30;
+            if (p1 == 1 & p2 == 1 & p3 == 1) profit = profit + 50;
+        }
+
+        private void SetImagesAccordingToValue()
+        {
+            p1 = GetRandomImageNumber();
+            p2 = GetRandomImageNumber();
+            p3 = GetRandomImageNumber();
+
+
+            SetImageAccordingToValue(slot1, p1);
+            SetImageAccordingToValue(slot2, p2);
+            SetImageAccordingToValue(slot3, p3);
+        }
+
+        private int GetRandomImageNumber()
+        {
+            int random = IntUtil.Random(100);
+
+            if (random < 25)
             {
-                credits = credits - bets;
-                textBox1.Text = credits.ToString();
+                return 1;
+            }
+            else if (random < 70)
+            {
+                return 2;
+            }
+            else
+            {
+                return 3;
+            }
+        }
 
-                for (var i = 0; i < 10; i++)
-                {
-                    p1 = IntUtil.Random(1, 4);
-                    p2 = IntUtil.Random(1, 4);
-                    p3 = IntUtil.Random(1, 4);
-
-                }
-
-                if (slot1.Image != null)
-                {
-                    slot1.Image.Dispose();
-                    slot1.Image = Image.FromFile(p1.ToString() + ".png");
-                }
-                if (slot2.Image != null)
-                {
-                    slot2.Image.Dispose();
-                    slot2.Image = Image.FromFile(p2.ToString() + ".png");
-                }
-                if (slot3.Image != null)
-                {
-                    slot3.Image.Dispose();
-                    slot3.Image = Image.FromFile(p3.ToString() + ".png");
-                }
-
-                total = 0;
-
-                if (p1 == 3) total = total + 5;
-                if (p1 == 2 & p2 == 2) total = total + 10;
-                if (p1 == 3 & p2 == 3) total = total + 10;
-                if (p1 == 3 & p2 == 3 & p3 ==3) total = total + 20;
-                if (p1 == 2 & p2 == 2 & p3 ==2) total = total + 30;
-                if (p1 == 1 & p2 == 1 & p3 ==1) total = total + 50;
-
-                credits = credits + total;
-                textBox3.Text = total.ToString();
-                textBox1.Text = credits.ToString();
-
-
+        private void SetImageAccordingToValue(PictureBox pictureBox, int pictureNumber)
+        {
+            if (pictureBox.Image != null)
+            {
+                pictureBox.Image.Dispose();
+                pictureBox.Image = Image.FromFile("Source/" + pictureNumber + ".png");
             }
         }
     }
