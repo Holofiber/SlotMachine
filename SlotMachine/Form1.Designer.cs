@@ -61,6 +61,7 @@
             this.slot2 = new System.Windows.Forms.PictureBox();
             this.slot3 = new System.Windows.Forms.PictureBox();
             this.slot1 = new System.Windows.Forms.PictureBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -411,12 +412,21 @@
             this.slot1.TabIndex = 0;
             this.slot1.TabStop = false;
             // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(865, 65);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(369, 226);
+            this.textBox4.TabIndex = 39;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(800, 484);
+            this.ClientSize = new System.Drawing.Size(1331, 484);
+            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.addCreditBtn);
             this.Controls.Add(this.label3);
@@ -509,6 +519,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button addCreditBtn;
         private System.Windows.Forms.Button exitBtn;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }
 

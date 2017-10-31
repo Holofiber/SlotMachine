@@ -24,12 +24,13 @@ namespace SlotMachine
         public static long profit = 0;
         public static int bets = 5;
       //  public static int betsMultipluer = 1;
-       
+      
 
         public static int p1;
         public static int p2;
         public static int p3;
-
+        public static Stack<string> StatisticStack = new Stack<string>();
+        
 
 
         private void Form1_Load(object sender, EventArgs e)
@@ -38,6 +39,7 @@ namespace SlotMachine
             slot2.Image = Image.FromFile("Source/2.png");
             slot3.Image = Image.FromFile("Source/3.png");
             
+
         }
 
         public static class IntUtil
@@ -64,10 +66,13 @@ namespace SlotMachine
                 return random.Next(max);
             }
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
-            bets = Convert.ToInt32(textBox1.Text);
+           
+            
+                
+                bets = Convert.ToInt32(textBox1.Text);
 
             if (credits < bets) return;
 
@@ -84,6 +89,19 @@ namespace SlotMachine
             credits = credits + profit;
             textBox3.Text = profit.ToString();
             textBox2.Text = credits.ToString();
+            string stats = credits.ToString();
+            textBox4.Clear();
+            StatisticStack.Push(stats);
+            foreach (var history in StatisticStack)
+            {
+                
+                textBox4.AppendText($"{history}\n");
+            }
+
+
+
+
+
         }
 
         private static void CalculateProfit()
@@ -168,5 +186,10 @@ namespace SlotMachine
             credits = credits + 100;
             textBox2.Text = credits.ToString();
         }
+
+        
+        
+
+
     }
 }
