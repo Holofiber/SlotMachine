@@ -110,7 +110,6 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(47, 15);
             this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(68, 20);
             this.textBox1.TabIndex = 6;
             this.textBox1.Text = "5";
@@ -120,6 +119,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(206, 15);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(47, 20);
             this.textBox2.TabIndex = 7;
             this.textBox2.Text = "100";
@@ -416,7 +416,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(888, 484);
+            this.ClientSize = new System.Drawing.Size(800, 484);
             this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.addCreditBtn);
             this.Controls.Add(this.label3);

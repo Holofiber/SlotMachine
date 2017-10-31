@@ -88,12 +88,30 @@ namespace SlotMachine
 
         private static void CalculateProfit()
         {
-                if (p1 == 3 & p2 == 3 & p3 == 3) profit = profit + bets * 3;
-           else if (p1 == 2 & p2 == 2 & p3 == 2) profit = profit + bets * 4;
-           else if (p1 == 1 & p2 == 1 & p3 == 1) profit = profit + bets * 5;
-           else if (p1 == 2 & p2 == 2) profit = profit + bets*2;
-           else if (p1 == 3 & p2 == 3) profit = profit + bets*2;
-           else if (p1 == 3) profit = profit + bets;
+            if (p1 == 3 & p2 == 3 & p3 == 3)
+            {
+                profit = profit + bets * 3;
+            }
+           else if (p1 == 2 & p2 == 2 & p3 == 2)
+            {
+                profit = profit + bets * 4;
+            }
+           else if (p1 == 1 & p2 == 1 & p3 == 1)
+            {
+                profit = profit + bets * 5;
+            }
+           else if ((p1 == 2 & p2 == 2)||(p1==2)&(p3==2)||(p2==2)&(p3==2))
+            {
+                profit = profit + bets*2;
+            }
+           else if ((p1 == 3 & p2 == 3)||(p1==3 & p3==3)||(p2==3)&(p3==3))
+            {
+                profit = profit + bets*2;
+            }
+           else if ((p1==3)||(p2==3)||(p3==3))
+            {
+                profit = profit + bets;
+            }
         }
 
         private void SetImagesAccordingToValue()
