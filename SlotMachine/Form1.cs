@@ -29,7 +29,9 @@ namespace SlotMachine
         public static int p1;
         public static int p2;
         public static int p3;
+        public static int p4;
         public static Stack<string> StatisticStack = new Stack<string>();
+        public static Stack<string> WinStatistickStack = new Stack<string>();
         
 
 
@@ -69,12 +71,22 @@ namespace SlotMachine
         
         private void button1_Click(object sender, EventArgs e)
         {
-           
-            
-                
+            try
+            {
                 bets = Convert.ToInt32(textBox1.Text);
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("wrong enter number"); 
+                return;
+            }
 
-            if (credits < bets) return;
+            if ((credits < bets) || (bets <= 0)  )
+            {
+                MessageBox.Show("Check your Bet");
+                return;
+            }
+
 
             credits = credits - bets;
             textBox2.Text = credits.ToString();
@@ -90,18 +102,19 @@ namespace SlotMachine
             textBox3.Text = profit.ToString();
             textBox2.Text = credits.ToString();
             string stats = credits.ToString();
+            
+           
+            HistoryBox();
+        }
+
+        private void HistoryBox()
+        {
+            StatisticStack.Push(profit.ToString());
             textBox4.Clear();
-            StatisticStack.Push(stats);
             foreach (var history in StatisticStack)
             {
-                
-                textBox4.AppendText($"{history}\n");
+                textBox4.AppendText($"{history}\t");
             }
-
-
-
-
-
         }
 
         private static void CalculateProfit()
@@ -137,6 +150,8 @@ namespace SlotMachine
             p1 = GetRandomImageNumber();
             p2 = GetRandomImageNumber();
             p3 = GetRandomImageNumber();
+            p4 = GetRandomImageNumber();
+
 
 
             SetImageAccordingToValue(slot1, p1);
@@ -148,17 +163,21 @@ namespace SlotMachine
         {
             int random = IntUtil.Random(100);
 
-            if (random < 25)
+            if (random < 20)
             {
                 return 1;
             }
-            else if (random < 70)
+            else if (random < 40)
             {
                 return 2;
             }
-            else
+            else if (random >40 & random<60)
             {
                 return 3;
+            }
+            else
+            {
+                return 4;
             }
         }
 
