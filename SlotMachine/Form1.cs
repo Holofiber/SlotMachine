@@ -9,206 +9,107 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace SlotMachine
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
 
-        
 
-        public static long credits = 100;
-        public static long profit = 0;
-        public static int bets = 5;
-      //  public static int betsMultipluer = 1;
-      
+        public long credits = 100;
+       // public long profit = 0;
+        public int bets = 5;
+        public int slotPicture1;
+        public int slotPicture2;
+        public int slotPicture3;
+        public int slotPicture4;
+        public Stack<string> StatisticStack = new Stack<string>();
+        public Stack<string> WinStatistickStack = new Stack<string>();
+        private int imagesP1;
+        private int imagesP2;
+        private int imagesP3;
+        private long yourprofit;
 
-        public static int p1;
-        public static int p2;
-        public static int p3;
-        public static int p4;
-        public static Stack<string> StatisticStack = new Stack<string>();
-        public static Stack<string> WinStatistickStack = new Stack<string>();
-        
 
-
-        private void Form1_Load(object sender, EventArgs e)
+        private void MainForm_Load(object sender, EventArgs e)
         {
-            slot1.Image = Image.FromFile("Source/1.png");
-            slot2.Image = Image.FromFile("Source/2.png");
-            slot3.Image = Image.FromFile("Source/3.png");
-            
-
+            pbSlot1.Image = Image.FromFile("Source/1.png");
+            pbSlot2.Image = Image.FromFile("Source/1.png");
+            pbSlot3.Image = Image.FromFile("Source/1.png");
         }
 
-        public static class IntUtil
-        {
-            private static Random random;
-
-            private static void Init()
-            {
-                if (random == null)
-                {
-                    random = new Random();
-                }
-            }
-
-            public static double Random()
-            {
-                Init();
-                return random.NextDouble();
-            }
-
-            public static int Random(int max)
-            {
-                Init();
-                return random.Next(max);
-            }
-        }
-        
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSpin_Click(object sender, EventArgs e)
         {
             try
             {
-                bets = Convert.ToInt32(textBox1.Text);
+                bets = Convert.ToInt32(tbBet.Text);
             }
             catch (Exception exception)
             {
-                MessageBox.Show("wrong enter number"); 
+                MessageBox.Show("wrong enter number");
                 return;
             }
 
-            if ((credits < bets) || (bets <= 0)  )
+            if ((credits < bets) || (bets <= 0))
             {
                 MessageBox.Show("Check your Bet");
                 return;
             }
-
-
-            credits = credits - bets;
-            textBox2.Text = credits.ToString();
             
+            credits = credits - bets;
+            tbCredit.Text = credits.ToString();
 
-            SetImagesAccordingToValue();
+            SetRandomImages setImages = new SetRandomImages(slotPicture1, slotPicture2, slotPicture3,
+                pbSlot1, pbSlot2, pbSlot3);
 
-            profit = 0;
+            setImages.SetImagesAccordingToValue();
+            imagesP1 = setImages.P1;
+            imagesP2 = setImages.P2;
+            imagesP3 = setImages.P3;
+            
+            Calculate calculateProfit = new Calculate(imagesP1, imagesP2, imagesP3);
+            Calculate calculate = new Calculate(bets);
 
-            CalculateProfit();
+            calculateProfit.CalculateProfit();
+            calculate.CalculateProfit();
 
+            var profit = calculate.Profit;
+            
             credits = credits + profit;
-            textBox3.Text = profit.ToString();
-            textBox2.Text = credits.ToString();
+            tbWin.Text = profit.ToString(); 
+            tbCredit.Text = credits.ToString();
             string stats = credits.ToString();
             
-           
             HistoryBox();
         }
 
         private void HistoryBox()
         {
-            StatisticStack.Push(profit.ToString());
-            textBox4.Clear();
+            StatisticStack.Push(yourprofit.ToString());
+            tbStatistic.Clear();
             foreach (var history in StatisticStack)
             {
-                textBox4.AppendText($"{history}\t");
+                tbStatistic.AppendText($"\n{history}\t");
             }
         }
-
-        private static void CalculateProfit()
+        
+        private void tbBet_TextChanged(object sender, EventArgs e)
         {
-            if (p1 == 3 & p2 == 3 & p3 == 3)
-            {
-                profit = profit + bets * 3;
-            }
-           else if (p1 == 2 & p2 == 2 & p3 == 2)
-            {
-                profit = profit + bets * 4;
-            }
-           else if (p1 == 1 & p2 == 1 & p3 == 1)
-            {
-                profit = profit + bets * 5;
-            }
-           else if ((p1 == 2 & p2 == 2)||(p1==2)&(p3==2)||(p2==2)&(p3==2))
-            {
-                profit = profit + bets*2;
-            }
-           else if ((p1 == 3 & p2 == 3)||(p1==3 & p3==3)||(p2==3)&(p3==3))
-            {
-                profit = profit + bets*2;
-            }
-           else if ((p1==3)||(p2==3)||(p3==3))
-            {
-                profit = profit + bets;
-            }
         }
 
-        private void SetImagesAccordingToValue()
-        {
-            p1 = GetRandomImageNumber();
-            p2 = GetRandomImageNumber();
-            p3 = GetRandomImageNumber();
-            p4 = GetRandomImageNumber();
-
-
-
-            SetImageAccordingToValue(slot1, p1);
-            SetImageAccordingToValue(slot2, p2);
-            SetImageAccordingToValue(slot3, p3);
-        }
-
-        private int GetRandomImageNumber()
-        {
-            int random = IntUtil.Random(100);
-
-            if (random < 20)
-            {
-                return 1;
-            }
-            else if (random < 40)
-            {
-                return 2;
-            }
-            else if (random >40 & random<60)
-            {
-                return 3;
-            }
-            else
-            {
-                return 4;
-            }
-        }
-
-        private void SetImageAccordingToValue(PictureBox pictureBox, int pictureNumber)
-        {
-            if (pictureBox.Image != null)
-            {
-                pictureBox.Image.Dispose();
-                pictureBox.Image = Image.FromFile("Source/" + pictureNumber + ".png");
-            }
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void exitBtn_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
         }
 
-        private void addCreditBtn_Click(object sender, EventArgs e)
+        private void btnAddCredit_Click(object sender, EventArgs e)
         {
             credits = credits + 100;
-            textBox2.Text = credits.ToString();
+            tbCredit.Text = credits.ToString();
         }
-
-        
-        
-
-
     }
 }

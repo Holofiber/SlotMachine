@@ -4,32 +4,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ConsoleApp1.Zuzu;
+
 
 namespace ConsoleApp1
 {
     class Program
     {
+       
         static void Main(string[] args)
         {
-            int k=1, m=1;
 
-            Dictionary<int, int> statsticDictionary = new Dictionary<int, int>();
-            for (int i = 0; i<10; i++)
-            {
-                statsticDictionary.Add(k, m);
-                statsticDictionary.Add(2,2);
-                k = k + 1;
-                m = m++;
-                foreach (var statistic in statsticDictionary)
-                {
-                    Console.WriteLine("{0}  {1}", statistic.Key, statistic.Value);
-                }
-            }
-            Console.WriteLine();
+            Program2.Run();
 
-            var myDixtiDictionary = new ConcurrentDictionary<string, string>();
-            
-             var random = new Random();
+            return;
+
+
+            //int k=1, m=1;
+
+            //Dictionary<int, int> statsticDictionary = new Dictionary<int, int>();
+            //for (int i = 0; i<10; i++)
+            //{
+            //    statsticDictionary.Add(k, m);
+            //    statsticDictionary.Add(2,2);
+            //    k = k + 1;
+            //    m = m++;
+            //    foreach (var statistic in statsticDictionary)
+            //    {
+            //        Console.WriteLine("{0}  {1}", statistic.Key, statistic.Value);
+            //    }
+            //}
+            //Console.WriteLine();
+
+            //var myDixtiDictionary = new ConcurrentDictionary<string, string>();
+
+            // var random = new Random();
 
             //for (int j = 0; j < 200; j++)
             //{
@@ -46,12 +55,12 @@ namespace ConsoleApp1
             //    {
             //        Console.WriteLine("{0:F2} -", rnd);
             //    }
-                
+
 
             //}
-           // Console.Write(" {0:F2} ", random.NextDouble());
-            Console.WriteLine();
-            Console.ReadLine();
+            // Console.Write(" {0:F2} ", random.NextDouble());
+            //  Console.WriteLine();
+            // Console.ReadLine();
 
         }
     }

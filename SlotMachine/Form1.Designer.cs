@@ -1,6 +1,6 @@
 ﻿namespace SlotMachine
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.slot1 = new System.Windows.Forms.PictureBox();
-            this.slot3 = new System.Windows.Forms.PictureBox();
-            this.slot2 = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            this.pbSlot1 = new System.Windows.Forms.PictureBox();
+            this.pbSlot3 = new System.Windows.Forms.PictureBox();
+            this.pbSlot2 = new System.Windows.Forms.PictureBox();
             this.credit = new System.Windows.Forms.Label();
             this.win = new System.Windows.Forms.Label();
             this.bet = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.tbBet = new System.Windows.Forms.TextBox();
+            this.tbCredit = new System.Windows.Forms.TextBox();
+            this.tbWin = new System.Windows.Forms.TextBox();
+            this.btnSpin = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -59,13 +59,13 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.addCreditBtn = new System.Windows.Forms.Button();
-            this.exitBtn = new System.Windows.Forms.Button();
+            this.btnAddCredit = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.slot1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.slot3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.slot2)).BeginInit();
+            this.tbStatistic = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSlot1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSlot3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSlot2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -82,35 +82,35 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
-            // slot1
+            // pbSlot1
             // 
-            this.slot1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.slot1.Location = new System.Drawing.Point(14, 46);
-            this.slot1.Name = "slot1";
-            this.slot1.Size = new System.Drawing.Size(150, 150);
-            this.slot1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.slot1.TabIndex = 0;
-            this.slot1.TabStop = false;
+            this.pbSlot1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.pbSlot1.Location = new System.Drawing.Point(14, 46);
+            this.pbSlot1.Name = "pbSlot1";
+            this.pbSlot1.Size = new System.Drawing.Size(150, 150);
+            this.pbSlot1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSlot1.TabIndex = 0;
+            this.pbSlot1.TabStop = false;
             // 
-            // slot3
+            // pbSlot3
             // 
-            this.slot3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.slot3.Location = new System.Drawing.Point(326, 46);
-            this.slot3.Name = "slot3";
-            this.slot3.Size = new System.Drawing.Size(150, 150);
-            this.slot3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.slot3.TabIndex = 1;
-            this.slot3.TabStop = false;
+            this.pbSlot3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.pbSlot3.Location = new System.Drawing.Point(326, 46);
+            this.pbSlot3.Name = "pbSlot3";
+            this.pbSlot3.Size = new System.Drawing.Size(150, 150);
+            this.pbSlot3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSlot3.TabIndex = 1;
+            this.pbSlot3.TabStop = false;
             // 
-            // slot2
+            // pbSlot2
             // 
-            this.slot2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.slot2.Location = new System.Drawing.Point(170, 46);
-            this.slot2.Name = "slot2";
-            this.slot2.Size = new System.Drawing.Size(150, 150);
-            this.slot2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.slot2.TabIndex = 2;
-            this.slot2.TabStop = false;
+            this.pbSlot2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.pbSlot2.Location = new System.Drawing.Point(172, 46);
+            this.pbSlot2.Name = "pbSlot2";
+            this.pbSlot2.Size = new System.Drawing.Size(150, 150);
+            this.pbSlot2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSlot2.TabIndex = 2;
+            this.pbSlot2.TabStop = false;
             // 
             // credit
             // 
@@ -138,42 +138,42 @@
             this.bet.TabIndex = 5;
             this.bet.Text = "Bet:";
             // 
-            // textBox1
+            // tbBet
             // 
-            this.textBox1.Location = new System.Drawing.Point(47, 15);
-            this.textBox1.MaxLength = 3;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(68, 20);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.Text = "5";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tbBet.Location = new System.Drawing.Point(47, 15);
+            this.tbBet.MaxLength = 3;
+            this.tbBet.Name = "tbBet";
+            this.tbBet.Size = new System.Drawing.Size(68, 20);
+            this.tbBet.TabIndex = 6;
+            this.tbBet.Text = "5";
+            this.tbBet.TextChanged += new System.EventHandler(this.tbBet_TextChanged);
             // 
-            // textBox2
+            // tbCredit
             // 
-            this.textBox2.Location = new System.Drawing.Point(206, 15);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(47, 20);
-            this.textBox2.TabIndex = 7;
-            this.textBox2.Text = "100";
+            this.tbCredit.Location = new System.Drawing.Point(206, 15);
+            this.tbCredit.Name = "tbCredit";
+            this.tbCredit.ReadOnly = true;
+            this.tbCredit.Size = new System.Drawing.Size(47, 20);
+            this.tbCredit.TabIndex = 7;
+            this.tbCredit.Text = "100";
             // 
-            // textBox3
+            // tbWin
             // 
-            this.textBox3.Location = new System.Drawing.Point(358, 11);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(73, 20);
-            this.textBox3.TabIndex = 8;
-            this.textBox3.Text = "0";
+            this.tbWin.Location = new System.Drawing.Point(358, 11);
+            this.tbWin.Name = "tbWin";
+            this.tbWin.Size = new System.Drawing.Size(73, 20);
+            this.tbWin.TabIndex = 8;
+            this.tbWin.Text = "0";
             // 
-            // button1
+            // btnSpin
             // 
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(172, 202);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 155);
-            this.button1.TabIndex = 9;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnSpin.Image = ((System.Drawing.Image)(resources.GetObject("btnSpin.Image")));
+            this.btnSpin.Location = new System.Drawing.Point(172, 202);
+            this.btnSpin.Name = "btnSpin";
+            this.btnSpin.Size = new System.Drawing.Size(150, 155);
+            this.btnSpin.TabIndex = 9;
+            this.btnSpin.UseVisualStyleBackColor = true;
+            this.btnSpin.Click += new System.EventHandler(this.btnSpin_Click);
             // 
             // pictureBox1
             // 
@@ -387,32 +387,32 @@
             this.label3.Text = "Bet x 5";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // addCreditBtn
+            // btnAddCredit
             // 
-            this.addCreditBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addCreditBtn.Image = global::SlotMachine.Properties.Resources.deposit;
-            this.addCreditBtn.Location = new System.Drawing.Point(12, 202);
-            this.addCreditBtn.Name = "addCreditBtn";
-            this.addCreditBtn.Size = new System.Drawing.Size(152, 155);
-            this.addCreditBtn.TabIndex = 37;
-            this.addCreditBtn.Text = "Add 100 coins to Credit";
-            this.addCreditBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.addCreditBtn.UseVisualStyleBackColor = true;
-            this.addCreditBtn.Click += new System.EventHandler(this.addCreditBtn_Click);
+            this.btnAddCredit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnAddCredit.Image = global::SlotMachine.Properties.Resources.deposit;
+            this.btnAddCredit.Location = new System.Drawing.Point(12, 202);
+            this.btnAddCredit.Name = "btnAddCredit";
+            this.btnAddCredit.Size = new System.Drawing.Size(152, 155);
+            this.btnAddCredit.TabIndex = 37;
+            this.btnAddCredit.Text = "Add 100 coins to Credit";
+            this.btnAddCredit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddCredit.UseVisualStyleBackColor = true;
+            this.btnAddCredit.Click += new System.EventHandler(this.btnAddCredit_Click);
             // 
-            // exitBtn
+            // btnExit
             // 
-            this.exitBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.exitBtn.CausesValidation = false;
-            this.exitBtn.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.exitBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.exitBtn.Image = global::SlotMachine.Properties.Resources.navigation_icons_67840;
-            this.exitBtn.Location = new System.Drawing.Point(326, 202);
-            this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(150, 155);
-            this.exitBtn.TabIndex = 38;
-            this.exitBtn.UseVisualStyleBackColor = false;
-            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnExit.CausesValidation = false;
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnExit.Image = global::SlotMachine.Properties.Resources.navigation_icons_67840;
+            this.btnExit.Location = new System.Drawing.Point(326, 202);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(150, 155);
+            this.btnExit.TabIndex = 38;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // label7
             // 
@@ -422,27 +422,28 @@
             this.label7.TabIndex = 40;
             this.label7.Text = "Win statistic";
             // 
-            // textBox4
+            // tbStatistic
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.tbStatistic.AcceptsReturn = true;
+            this.tbStatistic.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Location = new System.Drawing.Point(772, 36);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox4.Size = new System.Drawing.Size(42, 312);
-            this.textBox4.TabIndex = 41;
+            this.tbStatistic.Location = new System.Drawing.Point(772, 36);
+            this.tbStatistic.Multiline = true;
+            this.tbStatistic.Name = "tbStatistic";
+            this.tbStatistic.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbStatistic.Size = new System.Drawing.Size(42, 312);
+            this.tbStatistic.TabIndex = 41;
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(838, 484);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.tbStatistic);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.exitBtn);
-            this.Controls.Add(this.addCreditBtn);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnAddCredit);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox9);
@@ -463,23 +464,23 @@
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnSpin);
+            this.Controls.Add(this.tbWin);
+            this.Controls.Add(this.tbCredit);
+            this.Controls.Add(this.tbBet);
             this.Controls.Add(this.bet);
             this.Controls.Add(this.win);
             this.Controls.Add(this.credit);
-            this.Controls.Add(this.slot2);
-            this.Controls.Add(this.slot3);
-            this.Controls.Add(this.slot1);
-            this.Name = "Form1";
+            this.Controls.Add(this.pbSlot2);
+            this.Controls.Add(this.pbSlot3);
+            this.Controls.Add(this.pbSlot1);
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.slot1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.slot3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.slot2)).EndInit();
+            this.Load += new System.EventHandler(this.MainForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbSlot1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSlot3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSlot2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -501,16 +502,16 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox slot1;
-        private System.Windows.Forms.PictureBox slot3;
-        private System.Windows.Forms.PictureBox slot2;
+        private System.Windows.Forms.PictureBox pbSlot1;
+        private System.Windows.Forms.PictureBox pbSlot3;
+        private System.Windows.Forms.PictureBox pbSlot2;
         private System.Windows.Forms.Label credit;
         private System.Windows.Forms.Label win;
         private System.Windows.Forms.Label bet;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox tbBet;
+        private System.Windows.Forms.TextBox tbCredit;
+        private System.Windows.Forms.TextBox tbWin;
+        private System.Windows.Forms.Button btnSpin;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox7;
@@ -531,10 +532,10 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button addCreditBtn;
-        private System.Windows.Forms.Button exitBtn;
+        private System.Windows.Forms.Button btnAddCredit;
+        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbStatistic;
     }
 }
 

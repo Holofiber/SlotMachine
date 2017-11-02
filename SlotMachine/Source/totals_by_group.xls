@@ -1,0 +1,1225 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+<DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+<Author>LabDea</Author>
+<LastAuthor>LabDea</LastAuthor>
+<Created>2017-10-31T22:36:32Z</Created>
+<LastSaved>2017-10-31T22:36:32Z</LastSaved>
+<Company>LabDea</Company>
+<Version>1.0</Version>
+</DocumentProperties>
+<ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+<WindowHeight>8535</WindowHeight>
+<WindowWidth>12345</WindowWidth>
+<WindowTopX>480</WindowTopX>
+<WindowTopY>90</WindowTopY>
+<ProtectStructure>False</ProtectStructure>
+<ProtectWindows>False</ProtectWindows>
+</ExcelWorkbook>
+<Styles>
+<Style ss:ID="Default" ss:Name="Normal">
+<Alignment ss:Vertical="Bottom"/>
+<Borders/>
+<Font/>
+<Interior/>
+<NumberFormat/>
+<Protection/>
+</Style>
+<Style ss:ID="s23">
+<Font x:Family="Swiss" ss:Bold="1"/>
+</Style>
+</Styles>
+<Worksheet ss:Name="totals_by_group">
+<Table ss:ExpandedColumnCount="17"
+ ss:ExpandedRowCount="22" x:FullColumns="1" x:FullRows="1">
+<Column ss:Index="4" ss:AutoFitWidth="0" ss:Width="154.5"/>
+<Row ss:StyleID="s23">
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">Symbols</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">Tickets</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">Fills</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">Shares</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">Gross</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">Comm</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">ECN Rbt</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">ECN All</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">SEC</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">TAF</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">NSCC</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">Net</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">Adjustments</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">Total</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">Unrealized</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">Total Equity</Data>
+</Cell>
+</Row>
+<Row>
+<Cell>
+<Data ss:Type="String">B Group</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+</Row>
+<Row>
+<Cell>
+<Data ss:Type="String">CapXM Group</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+</Row>
+<Row>
+<Cell>
+<Data ss:Type="String">Demo Group</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+</Row>
+<Row>
+<Cell>
+<Data ss:Type="String">DTC Group</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+</Row>
+<Row>
+<Cell>
+<Data ss:Type="String">Dubai</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+</Row>
+<Row>
+<Cell>
+<Data ss:Type="String">JP Demo Group</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+</Row>
+<Row>
+<Cell>
+<Data ss:Type="String">London Group</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+</Row>
+<Row>
+<Cell>
+<Data ss:Type="String">MEX Demo</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+</Row>
+<Row>
+<Cell>
+<Data ss:Type="String">Mojo Demo</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+</Row>
+<Row>
+<Cell>
+<Data ss:Type="String">Mojo Group</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+</Row>
+<Row>
+<Cell>
+<Data ss:Type="String">NRG Demo</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+</Row>
+<Row>
+<Cell>
+<Data ss:Type="String">NRG Group</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+</Row>
+<Row>
+<Cell>
+<Data ss:Type="String">Official TradeX Demo</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+</Row>
+<Row>
+<Cell>
+<Data ss:Type="String">P Group</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+</Row>
+<Row>
+<Cell>
+<Data ss:Type="String">P2 Group</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+</Row>
+<Row>
+<Cell>
+<Data ss:Type="String">RN Demo Group</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+</Row>
+<Row>
+<Cell>
+<Data ss:Type="String">RN Group</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+</Row>
+<Row>
+<Cell>
+<Data ss:Type="String">test</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+</Row>
+<Row>
+<Cell>
+<Data ss:Type="String">TRN Group</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+</Row>
+<Row>
+<Cell>
+<Data ss:Type="String">X Group</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String"></Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+</Row>
+<Row>
+<Cell>
+<Data ss:Type="String">SUM</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">0</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">$0.00</Data>
+</Cell>
+</Row>
+</Table>
+<WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+<Print>
+<ValidPrinterInfo/>
+<HorizontalResolution>300</HorizontalResolution>
+<VerticalResolution>300</VerticalResolution>
+</Print>
+<Selected/>
+<Panes>
+<Pane>
+<Number>3</Number>
+<ActiveRow>1</ActiveRow>
+</Pane>
+</Panes>
+<ProtectObjects>False</ProtectObjects>
+<ProtectScenarios>False</ProtectScenarios>
+</WorksheetOptions>
+</Worksheet>
+</Workbook>
