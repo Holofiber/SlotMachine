@@ -16,19 +16,16 @@ namespace SlotMachine
         private readonly int bets;
         
 
-        public Calculate(int imagesP1, int imagesP2, int imagesP3)
+        public Calculate(int imagesP1, int imagesP2, int imagesP3, int bets)
         {
             this.imagesP1 = imagesP1;
             this.imagesP2 = imagesP2;
             this.imagesP3 = imagesP3;
-
-        }
-
-        public Calculate( int bets)
-        {
-            
             this.bets = bets;
+
         }
+
+   
         public void CalculateProfit()
         {
             

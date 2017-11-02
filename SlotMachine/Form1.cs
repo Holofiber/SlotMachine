@@ -18,23 +18,19 @@ namespace SlotMachine
         {
             InitializeComponent();
         }
-
-
+        
         public long credits = 100;
-       // public long profit = 0;
         public int bets = 5;
         public int slotPicture1;
         public int slotPicture2;
         public int slotPicture3;
         public int slotPicture4;
         public Stack<string> StatisticStack = new Stack<string>();
-        public Stack<string> WinStatistickStack = new Stack<string>();
         private int imagesP1;
         private int imagesP2;
         private int imagesP3;
         private long yourprofit;
-
-
+        
         private void MainForm_Load(object sender, EventArgs e)
         {
             pbSlot1.Image = Image.FromFile("Source/1.png");
@@ -71,19 +67,17 @@ namespace SlotMachine
             imagesP2 = setImages.P2;
             imagesP3 = setImages.P3;
             
-            Calculate calculateProfit = new Calculate(imagesP1, imagesP2, imagesP3);
-            Calculate calculate = new Calculate(bets);
-
+            Calculate calculateProfit = new Calculate(imagesP1, imagesP2, imagesP3, bets);
+           
             calculateProfit.CalculateProfit();
-            calculate.CalculateProfit();
-
-            var profit = calculate.Profit;
+            
+            var profit = calculateProfit.Profit;
             
             credits = credits + profit;
             tbWin.Text = profit.ToString(); 
             tbCredit.Text = credits.ToString();
             string stats = credits.ToString();
-            
+            yourprofit = profit;
             HistoryBox();
         }
 
