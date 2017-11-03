@@ -53,6 +53,10 @@ namespace SlotMachine
             {
                 Profit = Profit + bets;
             }
+            else if (imagesP1 == 7 & imagesP2 == 7 & imagesP3 == 7)
+            {
+                Profit = Profit + bets * 1000;
+            }
         }
     }
 }

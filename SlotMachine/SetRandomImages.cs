@@ -29,8 +29,7 @@ namespace SlotMachine
             SetImageAccordingToValue(slot2, P2);
             SetImageAccordingToValue(slot3, P3);
         }
-
-       
+        
         public SetRandomImages(int p1, int p2, int p3, 
             PictureBox slot1, PictureBox slot2, PictureBox slot3)
         {
@@ -41,11 +40,7 @@ namespace SlotMachine
             this.slot2 = slot2;
             this.slot3 = slot3;
         }
-
-       
-
-      
-
+        
         private int GetRandomImageNumber()
         {
             int random = SlotMachine.IntUtil.Random(100);
@@ -62,12 +57,15 @@ namespace SlotMachine
             {
                 return 3;
             }
-            else
+            else if (random > 60 & random < 95)
             {
                 return 4;
             }
+            else
+            {
+                return 7;
+            }
         }
-
         private void SetImageAccordingToValue(PictureBox pictureBox, int pictureNumber)
         {
             if (pictureBox.Image != null)

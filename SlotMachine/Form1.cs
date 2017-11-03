@@ -38,6 +38,7 @@ namespace SlotMachine
             pbSlot3.Image = Image.FromFile("Source/1.png");
         }
 
+      
         private void btnSpin_Click(object sender, EventArgs e)
         {
             try
@@ -76,9 +77,11 @@ namespace SlotMachine
             credits = credits + profit;
             tbWin.Text = profit.ToString(); 
             tbCredit.Text = credits.ToString();
-            string stats = credits.ToString();
             yourprofit = profit;
             HistoryBox();
+
+            tbWin.Focus();
+            tbWin.TabIndex = 1;
         }
 
         private void HistoryBox()
