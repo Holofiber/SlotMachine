@@ -24,39 +24,46 @@ namespace SlotMachine
             this.bets = bets;
 
         }
+        private int image1 = 1;
+        private int image2 = 2;
+        private int image3 = 3;
+        private int image7 = 7;
 
-   
+
         public void CalculateProfit()
         {
             
-            if (imagesP1 == 3 & imagesP2 == 3 & imagesP3 == 3)
+            if (imagesP1 == image3 & imagesP2 == image3 & imagesP3 == image3)
             {
                 Profit = Profit + bets * 3;
             }
-            else if (imagesP1 == 2 & imagesP2 == 2 & imagesP3 == 2)
+            else if (imagesP1 == image2 & imagesP2 == image2 & imagesP3 == image2)
             {
                 Profit = Profit + bets * 4;
             }
-            else if (imagesP1 == 1 & imagesP2 == 1 & imagesP3 == 1)
+            else if (imagesP1 == image1 & imagesP2 == image1 & imagesP3 == image1)
             {
                 Profit = Profit + bets * 5;
             }
-            else if ((imagesP1 == 2 & imagesP2 == 2) || (imagesP1 == 2) & (imagesP3 == 2) || (imagesP2 == 2) & (imagesP3 == 2))
+            else if ((imagesP1 == image2 & imagesP2 == image2) || (imagesP1 == image2) & (imagesP3 == image2) || (imagesP2 == 2) & (imagesP3 == image2))
             {
                 Profit = Profit + bets * 2;
             }
-            else if ((imagesP1 == 3 & imagesP2 == 3) || (imagesP1 == 3 & imagesP3 == 3) || (imagesP2 == 3) & (imagesP3 == 3))
+            else if ((imagesP1 == image3 & imagesP2 == image3) || (imagesP1 == image3 & imagesP3 == image3) || (imagesP2 == image3) & (imagesP3 == image3))
             {
                 Profit = Profit + bets * 2;
             }
-            else if ((imagesP1 == 3) || (imagesP2 == 3) || (imagesP3 == 3))
+            else if ((imagesP1 == image3) || (imagesP2 == image3) || (imagesP3 == image3))
             {
                 Profit = Profit + bets;
             }
-            else if (imagesP1 == 7 & imagesP2 == 7 & imagesP3 == 7)
+            else if (imagesP1 == image7 & imagesP2 == image7 & imagesP3 == image7)
             {
                 Profit = Profit + bets * 1000;
             }
+
+            
+
         }
     }
 }

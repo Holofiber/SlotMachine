@@ -9,8 +9,14 @@ using System.Windows.Forms;
 
 namespace SlotMachine
 {
-  public  class SetRandomImages
+    public  class SetRandomImages
     {
+        Image image1 = Image.FromFile("Source/1.png");
+        Image image2 = Image.FromFile("Source/2.png");
+        Image image3 = Image.FromFile("Source/3.png");
+        Image image4 = Image.FromFile("Source/4.png");
+        Image image7 = Image.FromFile("Source/7.png");
+
         public int P1 { get; private set; }
         public int P2 { get; private set; }
         public int P3 { get; private set; }
@@ -71,9 +77,28 @@ namespace SlotMachine
             if (pictureBox.Image != null)
             {
                 pictureBox.Image.Dispose();
-                pictureBox.Image = Image.FromFile("Source/" + pictureNumber + ".png");
+
+                if ( pictureNumber==1)
+                {
+                    pictureBox.Image = image1;
+                }
+                else if (pictureNumber==2)
+                {
+                    pictureBox.Image = image2;
+                }
+                else if (pictureNumber == 3)
+                {
+                    pictureBox.Image = image3;
+                }
+                else if (pictureNumber == 4)
+                {
+                    pictureBox.Image = image4;
+                }
+                else if (pictureNumber == 7)
+                {
+                    pictureBox.Image = image7;
+                }
             }
         }
-
     }
 }
