@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Credit.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Record.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Zuzu\Dog.cs" />
     <Compile Include="Zuzu\Program2.cs" />

@@ -19,11 +19,16 @@ namespace ConsoleApp1
         {
             string ConnectionString = ConfigurationManager.ConnectionStrings["ConnectDB"].ConnectionString;
             var connect = new SqlConnection(ConnectionString);
+
             string wher = "Select* From Users ";
+            string join =
+                "Select Users.UserName, Records.Bet, Records.Win From Records Inner Join  Users On Users.UserID = Records.UserID";
+
             IEnumerable<User> result = connect.Query<User>(wher);
+            IEnumerable<dynamic> res = connect.Query(join);
+            
 
-
-            foreach (var item in result)
+            foreach (var item in res)
             {
                 Console.WriteLine(item);
             }
