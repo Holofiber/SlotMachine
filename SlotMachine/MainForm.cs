@@ -9,18 +9,17 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SlotMachine.BusinessLogic;
 
 
 namespace SlotMachine
 {
     public partial class MainForm : Form
     {
-        public MainForm()
-        {
-            InitializeComponent();
-        }
-        
-        public long credits = 100;
+        private readonly Account account;
+        private readonly Credits balance;
+
+        public long credits;
         public int bets = 5;
         public int slotPicture1;
         public int slotPicture2;
@@ -32,11 +31,24 @@ namespace SlotMachine
         private int imagesP3;
         private long yourprofit;
         
+
+        public MainForm(Account account, Credits balance)
+        {
+            this.account = account;
+            this.balance = balance;
+
+            InitializeComponent();
+        }
+
         private void MainForm_Load(object sender, EventArgs e)
         {
             pbSlot1.Image = Image.FromFile("Source/1.png");
             pbSlot2.Image = Image.FromFile("Source/1.png");
             pbSlot3.Image = Image.FromFile("Source/1.png");
+
+            this.Text = account.UserName;
+             credits = balance.Amount;
+            tbCredit.Text = credits.ToString();
         }
         private void btnSpin_Click(object sender, EventArgs e)
         {

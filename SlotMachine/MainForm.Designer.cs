@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.credit = new System.Windows.Forms.Label();
+            this.lblCredit = new System.Windows.Forms.Label();
             this.win = new System.Windows.Forms.Label();
             this.bet = new System.Windows.Forms.Label();
             this.tbBet = new System.Windows.Forms.TextBox();
@@ -82,13 +82,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
-            // credit
+            // lblCredit
             // 
-            this.credit.Location = new System.Drawing.Point(169, 18);
-            this.credit.Name = "credit";
-            this.credit.Size = new System.Drawing.Size(50, 13);
-            this.credit.TabIndex = 3;
-            this.credit.Text = "Credit:";
+            this.lblCredit.Location = new System.Drawing.Point(169, 18);
+            this.lblCredit.Name = "lblCredit";
+            this.lblCredit.Size = new System.Drawing.Size(50, 13);
+            this.lblCredit.TabIndex = 3;
+            this.lblCredit.Text = "Credit:";
             // 
             // win
             // 
@@ -125,7 +125,6 @@
             this.tbCredit.ReadOnly = true;
             this.tbCredit.Size = new System.Drawing.Size(47, 20);
             this.tbCredit.TabIndex = 7;
-            this.tbCredit.Text = "100";
             // 
             // tbWin
             // 
@@ -472,7 +471,7 @@
             this.Controls.Add(this.tbBet);
             this.Controls.Add(this.bet);
             this.Controls.Add(this.win);
-            this.Controls.Add(this.credit);
+            this.Controls.Add(this.lblCredit);
             this.Controls.Add(this.pbSlot2);
             this.Controls.Add(this.pbSlot3);
             this.Controls.Add(this.pbSlot1);
@@ -507,7 +506,7 @@
         private System.Windows.Forms.PictureBox pbSlot1;
         private System.Windows.Forms.PictureBox pbSlot3;
         private System.Windows.Forms.PictureBox pbSlot2;
-        private System.Windows.Forms.Label credit;
+        private System.Windows.Forms.Label lblCredit;
         private System.Windows.Forms.Label win;
         private System.Windows.Forms.Label bet;
         private System.Windows.Forms.TextBox tbBet;
