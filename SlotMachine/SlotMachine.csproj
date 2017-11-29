@@ -56,6 +56,13 @@
     <Compile Include="BusinessLogic\Record.cs" />
     <Compile Include="Calculate.cs" />
     <Compile Include="DAL\TestDataStorage.cs" />
+    <Compile Include="DataBase\Credits.cs" />
+    <Compile Include="DataBase\Records.cs" />
+    <Compile Include="DataBase\Users.cs" />
+    <Compile Include="IntefaceDB\ICredits.cs" />
+    <Compile Include="IntefaceDB\IRecords.cs" />
+    <Compile Include="IntefaceDB\IUsers.cs" />
+    <Compile Include="IntefaceDB\IViewM.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
