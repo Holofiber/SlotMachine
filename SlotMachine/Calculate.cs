@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NLog.LayoutRenderers;
+using NLog;
 
 namespace SlotMachine
 {
    public class Calculate
     {
-        
+
+
+       public static Logger logger = LogManager.GetCurrentClassLogger();
+       
+
+
         public long Profit { get; private set; }
         private readonly int imagesP1;
         private readonly int imagesP2;
@@ -18,10 +25,16 @@ namespace SlotMachine
 
         public Calculate(int imagesP1, int imagesP2, int imagesP3, int bets)
         {
+            
+            logger.Trace("set image and bets" + bets);
+           
+
             this.imagesP1 = imagesP1;
             this.imagesP2 = imagesP2;
             this.imagesP3 = imagesP3;
             this.bets = bets;
+
+            logger.Trace("ok");
 
         }
         private int image1 = 1;
@@ -62,7 +75,7 @@ namespace SlotMachine
                 Profit = Profit + bets * 1000;
             }
 
-            
+            logger.Trace("Calcalate profit" + Profit);
 
         }
     }

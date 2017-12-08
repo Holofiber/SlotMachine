@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SlotMachine.BusinessLogic;
 using SlotMachine.DAL;
+using NLog;
 
 namespace SlotMachine
 {
@@ -41,8 +42,14 @@ namespace SlotMachine
 
             Credits credit = storage.GetCredits(account.Id);
 
+           
+
+            
+
 
             Application.Run(new MainForm(account, credit));
         }
+
+    
     }
 }

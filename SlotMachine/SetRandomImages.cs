@@ -5,16 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NLog;
 
 
 namespace SlotMachine
 {
     public  class SetRandomImages
     {
+        public static Logger log = LogManager.GetCurrentClassLogger();
+
         Image image1 = Image.FromFile("Source/1.png");
         Image image2 = Image.FromFile("Source/2.png");
         Image image3 = Image.FromFile("Source/3.png");
-        Image image4 = Image.FromFile("Source/4.png");
+     //   Image image4 = Image.FromFile("Source/4.png");
         Image image7 = Image.FromFile("Source/7.png");
 
         public int P1 { get; private set; }
@@ -51,6 +54,8 @@ namespace SlotMachine
         {
             int random = SlotMachine.IntUtil.Random(100);
 
+            log.Debug("random image is " + random);
+
             if (random < 20)
             {
                 return 1;
@@ -71,6 +76,8 @@ namespace SlotMachine
             {
                 return 7;
             }
+
+            
         }
         private void SetImageAccordingToValue(PictureBox pictureBox, int pictureNumber)
         {
@@ -90,10 +97,10 @@ namespace SlotMachine
                 {
                     pictureBox.Image = image3;
                 }
-                else if (pictureNumber == 4)
-                {
-                    pictureBox.Image = image4;
-                }
+              //  else if (pictureNumber == 4)
+               // {
+             //       pictureBox.Image = image4;
+              //  }
                 else if (pictureNumber == 7)
                 {
                     pictureBox.Image = image7;
