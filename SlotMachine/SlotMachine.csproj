@@ -54,6 +54,7 @@
     <Compile Include="BusinessLogic\Account.cs" />
     <Compile Include="BusinessLogic\Credits.cs" />
     <Compile Include="BusinessLogic\Record.cs" />
+    <Compile Include="BusinessLogic\Login.cs" />
     <Compile Include="Calculate.cs" />
     <Compile Include="DAL\TestDataStorage.cs" />
     <Compile Include="DataBase\Credits.cs" />

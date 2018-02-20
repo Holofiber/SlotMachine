@@ -1,21 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using SlotMachine.BusinessLogic;
 
 namespace SlotMachine.DAL
 {
-    class TestDataStorage
+    public class TestDataStorage
     {
-        List<Account> accounts = new List<Account>();
-        List<Record> recordses = new List<Record>();
-        List<Credits> creditses = new List<Credits>();
+        readonly List<Account> accounts = new List<Account>();
+        readonly List<Record> recordses = new List<Record>();
+        readonly List<Credits> creditses = new List<Credits>();
 
         public TestDataStorage()
         {
-            accounts.Add(new Account(){Id = 1, UserName = "Vasia", Password = "123"});
+            accounts.Add(new Account(){Id = 1, UserName = "1", Password = "1"});
             accounts.Add(new Account(){Id = 2, UserName = "Petya", Password = "321"});
 
             recordses.Add(new Record(){Id=1, Bet=100, UserId = 1, Win = 50});

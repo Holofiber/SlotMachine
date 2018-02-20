@@ -1,7 +1,7 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 using SlotMachine.BusinessLogic;
-using SlotMachine.DAL;
 namespace SlotMachine
 {
     static class Program
@@ -9,34 +9,19 @@ namespace SlotMachine
         [STAThread]
         static void Main()
         {
-           Application.EnableVisualStyles();
-           Application.SetCompatibleTextRenderingDefault(false);
+            
+            WrongLogin wrongLogin = new WrongLogin();
 
-            var loginWindow = new LoginWindow();
-            DialogResult dialogResult = loginWindow.ShowDialog();
+            wrongLogin.Login();
 
-            string login = null;
-            string password = null;
+            Account account =  wrongLogin.Account;
 
-            if (dialogResult == DialogResult.OK)
-            {
-                login = loginWindow.Login;
-                password = loginWindow.Password;
-            }
-            else
-            {
-                Environment.Exit(0);
-            }
-
-            TestDataStorage storage = new TestDataStorage();
-
-            Account account = storage.GetAccount(login, password);
-
-            Credits credit = storage.GetCredits(account.Id);
+            Credits credit = wrongLogin.Credits;
 
             Application.Run(new MainForm(account, credit));
         }
 
-    
+        
+
     }
 }
