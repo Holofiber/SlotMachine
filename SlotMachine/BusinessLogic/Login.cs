@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 using SlotMachine.DAL;
 
@@ -29,8 +28,6 @@ namespace SlotMachine.BusinessLogic
             }
 
             TestDataStorage storage = new TestDataStorage();
-
-            
 
             Account  = storage.GetAccount(login, password);
             if (Account == null)

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SlotMachine
 {
@@ -14,6 +10,7 @@ namespace SlotMachine
             if (random == null)
                 random = new Random();
         }
+
         public static int Random(int max)
         {
             Init();
